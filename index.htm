@@ -9,20 +9,24 @@
   <meta name="author" content="Connor Gelders">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="showStats()">
 <h1>Rock Paper Scissors</h1>
 <p>Pick one below and compete against this computer</p>
+<!--statistics-->
+<div id="stats"></div>
 <!--buttons-->
 <p>
   <button onclick="choice('Rock')">Rock</button>
   <button onclick="choice('Paper')">Paper</button>
   <button onclick="choice('Scissors')">Scissors</button>
 </p>
+<!--choices-->
 <p>
   <span id="player" class="roll"></span>
   <span id="computer" class="roll"></span>
 </p>
-
+<!--result texts-->
 <div id="result"></div>
+
 </body>
 </html>
