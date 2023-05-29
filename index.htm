@@ -1,32 +1,33 @@
 <html lang="EN">
 <head>
-  <title>Rock Paper Scissors</title>
-  <script src="rps.js"></script>
-  <link rel="stylesheet" href="rps.css">
-  <meta charset="UTF-8">
-  <meta name="description" content="Rock Paper Scissors Game">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Connor Gelders">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="rps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="stylesheet" href="rps.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Rock Paper Scissors Game">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Connor Gelders (13994)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="showStats()">
+<body>
 <h1>Rock Paper Scissors</h1>
 <p>Pick one below and compete against this computer</p>
 <!--statistics-->
 <div id="stats"></div>
+<button id="reset">Reset</button>
 <!--buttons-->
 <p>
-  <button onclick="choice('Rock')">Rock</button>
-  <button onclick="choice('Paper')">Paper</button>
-  <button onclick="choice('Scissors')">Scissors</button>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
 </p>
 <!--choices-->
 <p>
-  <span id="player" class="roll"></span>
-  <span id="computer" class="roll"></span>
+    <span id="player" class="roll"></span>
+    <span id="computer" class="roll"></span>
 </p>
 <!--result texts-->
 <div id="result"></div>
-
 </body>
 </html>

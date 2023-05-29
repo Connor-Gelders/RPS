@@ -1,3 +1,4 @@
+/* Created by Connor Gelders (13994) */
 body {
     font-size: 20px;
     background-color: black;
@@ -8,6 +9,14 @@ body {
 button {
     font-size: 25px;
     width: 110px;
+}
+button:hover {
+    color: Red;
+}
+
+#reset {
+    font-size: 15px;
+    width: 80px;
 }
 
 span.roll {
